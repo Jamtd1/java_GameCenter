@@ -12,7 +12,7 @@ public class Player {
 
 	// The number of times they can continue if they
 	// lose a game
-	int continues = 3;
+	protected int continues = 3;
 
 	// Constructor for the Player class which assigns a name
 	public Player(String playerName) {

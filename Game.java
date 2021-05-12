@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class Game {
   Player player;
-  int pointsBet = 0;
+  protected int pointsBet = 0;
 
   // constructor for the Player class
   public Game(Player newPlayer) {

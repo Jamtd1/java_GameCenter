@@ -4,7 +4,7 @@ package gameCenter;
 //basic players as the "admin" player is meant for
 //debugging issues with the arcade machine
 public class BasicPlayer extends Player {
-	PlayerType type = PlayerType.Basic;
+	public PlayerType type = PlayerType.Basic;
 	
 	public BasicPlayer(String playerName) {
 		super(playerName);

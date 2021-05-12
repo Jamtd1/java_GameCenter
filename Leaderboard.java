@@ -42,7 +42,7 @@ public class Leaderboard {
 		
 	}
 
-	public ArrayList<String> getLeaderboard() throws IOException {
+	private ArrayList<String> getLeaderboard() throws IOException {
 		// load the file
 		File leaderboardFile = new File("leaderboard.txt");
 		

@@ -4,8 +4,8 @@ package gameCenter;
 //should only be debugging the arcade machine and
 //as such has near infinite continues
 public class AdminPlayer extends Player {
-	int continues = 1000;
-	PlayerType type = PlayerType.Admin;
+	private int continues = 1000;
+	public PlayerType type = PlayerType.Admin;
 
 	public AdminPlayer(String playerName) {
 		super(playerName);
