@@ -5,17 +5,11 @@ import java.io.InputStreamReader;
 import java.io.IOException;
 
 enum MenuOption {
-	Hangman,
-	Cointoss,
-	Leaderboard,
-	Return,
-	UnrecognizedInput
+	Hangman, Cointoss, Leaderboard, Return, UnrecognizedInput
 }
 
 enum MainMenu {
-	NewPlayer,
-	Quit,
-	UnrecognizedInput
+	NewPlayer, Quit, UnrecognizedInput
 }
 
 public class Main {
@@ -25,31 +19,32 @@ public class Main {
 
 		String mainMenu = "continue";
 		while (mainMenu.equals("continue")) {
-			
+
 			// print the main menu
 			printMainMenu();
-			
+
 			MainMenu mainOption = readMainOption();
-			
+
 			if (mainOption == MainMenu.NewPlayer) {
 				// print the starting message
 				printWelcome();
-		
+
 				try {
-				// Create a new player
-				Player player = getPlayer();
-				System.out.println("player type: " + player.getClass().getSimpleName());
-		
-				// Once created print a message
-				userCreated(player);
-		
-					while(player.continues > 0) {
-					// Now that we have our player tell them the options
-					printOptions();
-		
-					// Read in the option
-					MenuOption option = readOption();
-		
+					// Create a new player
+					Player player = getPlayer();
+
+					System.out.println(player.continues);
+
+					// Once created print a message
+					userCreated(player);
+
+					while (player.continues > 0) {
+						// Now that we have our player tell them the options
+						printOptions();
+
+						// Read in the option
+						MenuOption option = readOption();
+
 						// Depending on what the user selected start a game,
 						// retire or show the leaderboard
 						if (option == MenuOption.Return) {
@@ -62,17 +57,16 @@ public class Main {
 							leaderboard.print();
 						} else if (option == MenuOption.Hangman) {
 							// start the hangman game
-							// HangmanGame hangman = new HangmanGame(player);
-							System.out.println("Lets play hangman");
+							HangmanGame hangman = new HangmanGame(player);
+							hangman.play();
 						} else if (option == MenuOption.Cointoss) {
 							// start the hangman game
 							CointossGame cointoss = new CointossGame(player);
 							cointoss.play();
-							System.out.println("Lets play coin toss");
 						} else if (option == MenuOption.UnrecognizedInput) {
 							printUnrecognisedMenuOption();
 						}
-		
+
 						if (player.continues == 0) {
 							System.out.println("Your out of continues!! Let's see how you did!'");
 							// user has run out of continues
@@ -85,17 +79,17 @@ public class Main {
 							// printGoodbye();
 						}
 					}
-				} catch(Exception e) {
+				} catch (Exception e) {
 					System.out.println("An error was thrown!");
 					System.out.println(e);
 				}
-			} else if (mainOption == MainMenu.Quit){
+			} else if (mainOption == MainMenu.Quit) {
 				mainMenu = "quit";
 				leaderboard.print();
 			} else if (mainOption == MainMenu.UnrecognizedInput) {
 				printUnrecognisedMenuOption();
 			}
-			
+
 		}
 	}
 
@@ -118,7 +112,7 @@ public class Main {
 			return MainMenu.UnrecognizedInput;
 		}
 	}
-	
+
 	private static MenuOption readOption() throws IOException {
 		String option = readLine();
 
@@ -137,7 +131,6 @@ public class Main {
 			return MenuOption.UnrecognizedInput;
 		}
 	}
-	
 
 	private static Player getPlayer() throws IOException {
 		// Create a buffered reader to
@@ -149,7 +142,7 @@ public class Main {
 		type = type.toLowerCase();
 		System.out.println(type);
 		// change the below to look for a passcode if admin
-		if(type.equals("y")){
+		if (type.equals("y")) {
 			System.out.println("Player is admin");
 			return new AdminPlayer(name);
 		} else {
@@ -159,7 +152,7 @@ public class Main {
 	}
 
 	private static void printUnrecognisedMenuOption() {
-	System.out.println("Sorry I don't recognise that input, can you try another from the list?");
+		System.out.println("Sorry I don't recognise that input, can you try another from the list?");
 	}
 
 	private static void userCreated(Player player) {
@@ -183,7 +176,7 @@ public class Main {
 		System.out.println("l). View the leaderboard");
 		System.out.println("r). Return");
 	}
-	
+
 	private static void printMainMenu() {
 		System.out.println("Welcome to Mischief Managed Arcade!");
 		System.out.println("Please select from the options below");
@@ -191,26 +184,6 @@ public class Main {
 		System.out.println("Main Menu");
 		System.out.println("1). New Player");
 		System.out.println("q). Quit");
-		
+
 	}
 }
-
-// class Game {
-//   Player player;
-//   int pointsBet;
-//
-//   public Game(Player newPlayer, int bet) {
-//     player = newPlayer;
-//     pointsBet = bet;
-//   }
-// }
-
-
-// class Leaderboard {
-//    File file;
-//
-//    private Leaderboard() {}
-//
-//    public void addPlayersScore(Player player) {}
-//    public void print() {}
-// }

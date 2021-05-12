@@ -5,7 +5,7 @@ package gameCenter;
 //debugging issues with the arcade machine
 public class BasicPlayer extends Player {
 	public PlayerType type = PlayerType.Basic;
-	
+
 	public BasicPlayer(String playerName) {
 		super(playerName);
 	}

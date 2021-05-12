@@ -24,17 +24,21 @@ public class Player {
 		return points;
 	}
 
-  public void addPoints(int pointsBet) {
-    points += pointsBet;
-  }
+	public void setContinues(int continues) {
+		this.continues = continues;
+	}
 
-  public void subtractPoints(int pointsBet) {
-    points -= pointsBet;
-  }
+	public void addPoints(int pointsBet) {
+		points += pointsBet;
+	}
 
-  public void subtractContinue() {
-    continues -= 1;
-  }
+	public void subtractPoints(int pointsBet) {
+		points -= pointsBet;
+	}
+
+	public void subtractContinue() {
+		continues -= 1;
+	}
 
 	// Get the players name
 	public String getName() {
