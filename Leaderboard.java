@@ -1,117 +1,115 @@
 package gameCenter;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.Scanner;
+import java.util.ArrayList;
 import java.io.*;
+import java.io.IOException;
 
 public class Leaderboard {
 	
-	public Leaderboard () {
+	public Leaderboard () throws IOException {
 		
 		// for advanced marks this needs to check for a file  first
-		
-		try {
-		      File leaderboard = new File("leaderboard.txt");
-		      if (leaderboard.createNewFile()) {
-		        System.out.println("File created.");
-		      } else {
-		        System.out.println("File was not created.");
-		      }
-		    } catch (IOException e) {
-		      System.out.println("An error occurred.");
-		      e.printStackTrace();
-		    }
-	}
-	
-	private String loadFile(String fileName) {
-		
-		try {
-			
-			File file = new File(fileName);
-			
-			if (!file.exists()) {
-				return "Error: that file does not exist. Please try again.";
+		File file = new File("leaderboard.txt");
+		if (!file.exists()) {
+			if (file.createNewFile()) {
+			System.out.println("File created.");
 			} else {
-			
-				BufferedReader reader = new BufferedReader(new FileReader(fileName));
-				StringBuilder stringBuilder = new StringBuilder();
-				String line = null;
-				String ls = System.getProperty("line.separator");
-				int countLines = 0;
-				
-				while ((line = reader.readLine()) != null) {
-					countLines ++;
-					stringBuilder.append(line);
-					stringBuilder.append(ls);
-				}
-				// delete the last new line separator
-				stringBuilder.deleteCharAt(stringBuilder.length() - 1);
-				reader.close();
-				
-				// Create a string from the file information
-				String board = stringBuilder.toString();
-				
-				// return the string created 
-				return board;
+			System.out.println("File was not created.");
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
-			return "Error";
 		}
 	}
-
-	public String getLeaderboard() {
-		// load the file
-		String leaderboardFile = loadFile("leaderboard.txt");
-		// Read the entire file;
-		return leaderboardFile;
-		
+	
+	// printLeaderBoard
+	public void print() throws IOException {
+		// get the leaderboard list
+		ArrayList<String> leaderboard = this.getLeaderboard();
+		// print each index of the leaderboard
+		System.out.println("Leader Board");
+		for (int i = 0; i < leaderboard.size(); i++) {
+			System.out.println(leaderboard.get(i));
+		}
 	}
 	
-	public int getIndexForPlayerScore() {
-		// get number of points player has
-		
-		// compare with each line
-		
-		// if points greater than points at line
-		
-			// return the line index
-		
-		// else 
-		
-			// move onto the next line
-		return 1;
-	}
-	
-	public void putPlayerScoreInIndex(int index) {
-		
-	}
-	
-	public void newPosition(Player player) {
-		// create a new leaderboard position
+	// addPlayer		
+	public void addPlayer(Player player) throws IOException {
 		String name = player.getName();
 		int points = player.getPoints();
 		
-		// Get the leaderboard
-	    getLeaderboard();
-		// figure out the position of the player in the leaderboard
-		int index = getIndexForPlayerScore();
-		// Insert player at that position
-		putPlayerScoreInIndex(index);
+		// addPlayerData
+		ArrayList<String> leaderboard = this.addPlayerData(name, points);
+		// write leaderboard to file
+		this.writeLeaderboardtoFile(leaderboard);
 		
 	}
-//	
-	// add new position to leaderboard
-	// pass the position to a leaderboard file
-	
-	
+
+	public ArrayList<String> getLeaderboard() throws IOException {
+		// load the file
+		File leaderboardFile = new File("leaderboard.txt");
 		
+		// Read the entire file;
+		BufferedReader reader = new BufferedReader(new FileReader(leaderboardFile));
+		String line = null;
 		
-	// create a leaderboard file if none exist
+		ArrayList<String> leaderboard = new ArrayList<String>();
+		
+		while ((line = reader.readLine()) != null) {
+			leaderboard.add(line);
+		}
+
+		reader.close();
+		
+		// return leaderboard array;
+		return leaderboard;
 	
-	// read in the leaderboard file 
+	}
+	
+	private ArrayList<String> addPlayerData(String name, int points) throws IOException {
+		
+		// get the player data
+		String playerInfo = name + " , " + Integer.toString(points);
+		
+		// get the leaderboard
+		ArrayList<String> leaderboard = this.getLeaderboard();
+		
+		// get number of points player has
+		// for each index in the array assign string to temporary variable
+		if (leaderboard.isEmpty()) {
+			leaderboard.add(0,playerInfo);
+		} else {
+			for (int i = 0; i<leaderboard.size(); i++) {
+				String temp = leaderboard.get(i);
+				temp = temp.substring(temp.lastIndexOf(',') + 1).trim();
+				int leaderPoints = Integer.parseInt(temp);
+				// compare with each line
+				// if points greater than points at line
+				if (leaderPoints <= points) {
+					// add player info string the line index
+					leaderboard.add(i, playerInfo);
+					break;
+				} else if (i == (leaderboard.size()-1)) {
+					leaderboard.add(playerInfo);
+					break;
+				}
+			}
+		}
+		return leaderboard;
+	}
+	
+	private void writeLeaderboardtoFile (ArrayList<String> leaderboard) throws IOException {
+		
+		File f = new File ("leaderboard.txt");
+		PrintWriter out = new PrintWriter (new FileOutputStream(f));
+		if (!f.exists()) {
+			f.createNewFile();
+		}
+		for (String s : leaderboard) {
+			out.println(s);
+		}
+		out.close();
+	}
+	
 	
 }
+
 
 

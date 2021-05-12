@@ -1,3 +1,5 @@
+package gameCenter;
+
 //the Player class
 public class Player {
 

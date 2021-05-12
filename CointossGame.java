@@ -1,3 +1,5 @@
+package gameCenter;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
@@ -38,11 +40,12 @@ public class CointossGame extends Game {
           PlayerChoice choice = this.getPlayerChoice();
 
           if (choice == PlayerChoice.UnrecognizedInput) {
-            // Invalid input, check if user wants to continue, if yes then break
+            // Invalid input, check if user wants to continue, if yes then start again
             if (this.handleUnrecognizedInput())  {
-              shouldContinue = false;
+              continue;
             } else {
-              break;
+        	  shouldContinue = false;	
+        	  break;
             }
           }
 
@@ -69,8 +72,9 @@ public class CointossGame extends Game {
       } catch (IOException e) {
         // Error reading user input, ask to try again
         if (this.handleUnrecognizedInput()) {
-         shouldContinue = false;
+          continue;
         } else {
+          shouldContinue = false;
           break;
         }
       } catch (NumberFormatException e) {

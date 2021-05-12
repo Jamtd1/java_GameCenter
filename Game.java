@@ -1,3 +1,5 @@
+package gameCenter;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
@@ -48,7 +50,7 @@ public class Game {
   }
 
   protected Boolean handleUnrecognizedInput() {
-     System.out.println("Hmm, not sure what you mean there, do you want to back out? (y/n)");
+     System.out.println("Hmm, not sure what you mean there, do you want to try again? (y/n)");
      return getYesNo();
   }
 
