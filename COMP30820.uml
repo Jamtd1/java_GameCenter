@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_Kg_ygLMXEeuZeNFAWdsbSw" name="COMP30820">
+    <eAnnotations xmi:id="_L6_EQLMXEeuZeNFAWdsbSw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_L6_EQbMXEeuZeNFAWdsbSw" source="codegen">
+        <details xmi:id="_L6_rULMXEeuZeNFAWdsbSw" key="codegenDirectory" value="/COMP30820/src"/>
+        <details xmi:id="_MqhDwLMXEeuZeNFAWdsbSw" key="AssociatedSourceCode" value="/COMP30820/src/gameCenter/AdminPlayer.java;3006608781/1;/COMP30820/src/gameCenter/BasicPlayer.java;3053759221/1;/COMP30820/src/gameCenter/Game.java;47150787/1;/COMP30820/src/gameCenter/Hangman.java;349953450/1;/COMP30820/src/gameCenter/Leaderboard.java;2392984312/1;/COMP30820/src/gameCenter/Player.java;3532850099/1;/COMP30820/src/gameCenter/PlayerType.java;4205855476/1;/COMP30820/src/gameCenter/PlayerChoice.java;3816286941/1;/COMP30820/src/gameCenter/MenuOption.java;3408914885/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_MTcAgLMXEeuZeNFAWdsbSw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_MTcnkLMXEeuZeNFAWdsbSw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_MTcnkbMXEeuZeNFAWdsbSw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_MTcnkrMXEeuZeNFAWdsbSw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_MTdOoLMXEeuZeNFAWdsbSw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_MTdOobMXEeuZeNFAWdsbSw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_MTdOorMXEeuZeNFAWdsbSw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_MTdOo7MXEeuZeNFAWdsbSw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_MTd1sLMXEeuZeNFAWdsbSw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_MTttULMXEeuZeNFAWdsbSw" name="gameCenter">
+      <packagedElement xmi:type="uml:Class" xmi:id="_MUmeILMXEeuZeNFAWdsbSw" name="AdminPlayer">
+        <generalization xmi:id="_MaGCILMXEeuZeNFAWdsbSw" general="_MWHhELMXEeuZeNFAWdsbSw"/>
+        <ownedAttribute xmi:id="_Mar4ALMXEeuZeNFAWdsbSw" name="continues" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_MasfELMXEeuZeNFAWdsbSw" value="1000"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_MattMbMXEeuZeNFAWdsbSw" name="type" visibility="package" type="_MWO10LMXEeuZeNFAWdsbSw">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_MattMrMXEeuZeNFAWdsbSw" value="PlayerType.Admin"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbB2QLMXEeuZeNFAWdsbSw" name="AdminPlayer" specification="_MUuZ8LMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbCdULMXEeuZeNFAWdsbSw" name="playerName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MbCdUbMXEeuZeNFAWdsbSw" type="_MUmeILMXEeuZeNFAWdsbSw" direction="return"/>
+          <language>java</language>
+          <body>super(playerName);
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbH84LMXEeuZeNFAWdsbSw" name="getName" specification="_MUxdQLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbH84bMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return name + &quot; (Admin)&quot;;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_MUuZ8LMXEeuZeNFAWdsbSw" name="AdminPlayer" method="_MbB2QLMXEeuZeNFAWdsbSw">
+          <eAnnotations xmi:id="_MUw2MLMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_MUw2MbMXEeuZeNFAWdsbSw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_MUuZ8bMXEeuZeNFAWdsbSw" name="playerName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MUw2MrMXEeuZeNFAWdsbSw" type="_MUmeILMXEeuZeNFAWdsbSw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MUxdQLMXEeuZeNFAWdsbSw" name="getName" method="_MbH84LMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MUyEULMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MU0gkLMXEeuZeNFAWdsbSw" name="BasicPlayer">
+        <generalization xmi:id="_MaH3ULMXEeuZeNFAWdsbSw" general="_MWHhELMXEeuZeNFAWdsbSw"/>
+        <ownedAttribute xmi:id="_Mau7ULMXEeuZeNFAWdsbSw" name="type" visibility="package" type="_MWO10LMXEeuZeNFAWdsbSw">
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Mau7UbMXEeuZeNFAWdsbSw" value="PlayerType.Basic"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbIj8LMXEeuZeNFAWdsbSw" name="BasicPlayer" specification="_MU1usLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbIj8bMXEeuZeNFAWdsbSw" name="playerName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MbIj8rMXEeuZeNFAWdsbSw" type="_MU0gkLMXEeuZeNFAWdsbSw" direction="return"/>
+          <language>java</language>
+          <body>super(playerName);
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_MU1usLMXEeuZeNFAWdsbSw" name="BasicPlayer" method="_MbIj8LMXEeuZeNFAWdsbSw">
+          <eAnnotations xmi:id="_MU2VwbMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_MU2VwrMXEeuZeNFAWdsbSw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_MU2VwLMXEeuZeNFAWdsbSw" name="playerName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MU2Vw7MXEeuZeNFAWdsbSw" type="_MU0gkLMXEeuZeNFAWdsbSw" direction="return"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MU4yALMXEeuZeNFAWdsbSw" name="PlayerChoice" visibility="package">
+        <ownedLiteral xmi:id="_MVJQsLMXEeuZeNFAWdsbSw" name="Heads"/>
+        <ownedLiteral xmi:id="_MVJQsbMXEeuZeNFAWdsbSw" name="Tails"/>
+        <ownedLiteral xmi:id="_MVJ3wLMXEeuZeNFAWdsbSw" name="UnrecognizedInput"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MVPXULMXEeuZeNFAWdsbSw" name="Game">
+        <ownedAttribute xmi:id="_MawJcLMXEeuZeNFAWdsbSw" name="player" visibility="package" type="_MWHhELMXEeuZeNFAWdsbSw" association="_Mbbe4LMXEeuZeNFAWdsbSw"/>
+        <ownedAttribute xmi:id="_MaxXkLMXEeuZeNFAWdsbSw" name="pointsBet" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_MaxXkbMXEeuZeNFAWdsbSw" value="0"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbLnQrMXEeuZeNFAWdsbSw" name="Game" specification="_MaSPYLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbMOULMXEeuZeNFAWdsbSw" name="newPlayer" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+          <ownedParameter xmi:id="_MbMOUbMXEeuZeNFAWdsbSw" type="_MVPXULMXEeuZeNFAWdsbSw" direction="return"/>
+          <language>java</language>
+          <body>player = newPlayer;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbMOUrMXEeuZeNFAWdsbSw" name="takeBet" specification="_MVRMgLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbMOU7MXEeuZeNFAWdsbSw" name="bet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>pointsBet = bet;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbMOVLMXEeuZeNFAWdsbSw" name="readAmount" specification="_MVRzkbMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbMOVbMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return Integer.parseInt(readLine());
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbM1YLMXEeuZeNFAWdsbSw" name="readLine" specification="_MVTBsLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbM1YbMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+ return reader.readLine();
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbM1YrMXEeuZeNFAWdsbSw" name="printInvalidAmountError" specification="_MVUP0LMXEeuZeNFAWdsbSw">
+          <language>java</language>
+          <body>System.out.println(&quot;That doesn't seem to be a valid amount, please enter a single integer value, e.g. 1 or 10&quot;);
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbM1Y7MXEeuZeNFAWdsbSw" name="printMustBetMoreThanZeroPoints" specification="_MVUP0bMXEeuZeNFAWdsbSw">
+          <language>java</language>
+          <body>System.out.println(&quot;You must bet more than 0 points to play&quot;);
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbNccLMXEeuZeNFAWdsbSw" name="playerWon" specification="_MaS2cLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbNccbMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+          <ownedParameter xmi:id="_MbNccrMXEeuZeNFAWdsbSw" name="amountBet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>player.addPoints(amountBet);
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbNcc7MXEeuZeNFAWdsbSw" name="playerLost" specification="_MaUEkLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbNcdLMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+          <ownedParameter xmi:id="_MbNcdbMXEeuZeNFAWdsbSw" name="amountBet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>player.subtractPoints(amountBet);
+ player.subtractContinue();
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbODgLMXEeuZeNFAWdsbSw" name="handleUnrecognizedInput" specification="_MVWFALMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbODgbMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>System.out.println(&quot;Hmm, not sure what you mean there, do you want to try again? (y/n)&quot;);
+  return getYesNo();
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbODgrMXEeuZeNFAWdsbSw" name="getYesNo" specification="_MVWsELMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbODg7MXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>try {
+   String option = readLine();
+   return option.toLowerCase().equals(&quot;y&quot;);
+ } catch (IOException e) {
+   return false;
+ }
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbOqkLMXEeuZeNFAWdsbSw" name="printHowManyPointsToBet" specification="_MaUroLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbOqkbMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+          <language>java</language>
+          <body>System.out.println(&quot;How many points would you like to bet? You have &quot; + player.getPoints() + &quot; to bet. Mind your amount must be an integer too!&quot;);
+  </body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_MVRMgLMXEeuZeNFAWdsbSw" name="takeBet" visibility="protected" method="_MbMOUrMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MVRzkLMXEeuZeNFAWdsbSw" name="bet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MVRzkbMXEeuZeNFAWdsbSw" name="readAmount" visibility="protected" method="_MbMOVLMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MVSaoLMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MVTBsLMXEeuZeNFAWdsbSw" name="readLine" visibility="protected" method="_MbM1YLMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MVTowLMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MVUP0LMXEeuZeNFAWdsbSw" name="printInvalidAmountError" visibility="protected" method="_MbM1YrMXEeuZeNFAWdsbSw"/>
+        <ownedOperation xmi:id="_MVUP0bMXEeuZeNFAWdsbSw" name="printMustBetMoreThanZeroPoints" visibility="protected" method="_MbM1Y7MXEeuZeNFAWdsbSw"/>
+        <ownedOperation xmi:id="_MVWFALMXEeuZeNFAWdsbSw" name="handleUnrecognizedInput" visibility="protected" method="_MbODgLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MVWFAbMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MVWsELMXEeuZeNFAWdsbSw" name="getYesNo" visibility="protected" method="_MbODgrMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MVXTILMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MaSPYLMXEeuZeNFAWdsbSw" name="Game" method="_MbLnQrMXEeuZeNFAWdsbSw">
+          <eAnnotations xmi:id="_MaSPYrMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_MaSPY7MXEeuZeNFAWdsbSw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_MaSPYbMXEeuZeNFAWdsbSw" name="newPlayer" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+          <ownedParameter xmi:id="_MaSPZLMXEeuZeNFAWdsbSw" type="_MVPXULMXEeuZeNFAWdsbSw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MaS2cLMXEeuZeNFAWdsbSw" name="playerWon" visibility="protected" method="_MbNccLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MaTdgLMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+          <ownedParameter xmi:id="_MaTdgbMXEeuZeNFAWdsbSw" name="amountBet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MaUEkLMXEeuZeNFAWdsbSw" name="playerLost" visibility="protected" method="_MbNcc7MXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MaUEkbMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+          <ownedParameter xmi:id="_MaUEkrMXEeuZeNFAWdsbSw" name="amountBet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MaUroLMXEeuZeNFAWdsbSw" name="printHowManyPointsToBet" visibility="protected" method="_MbOqkLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MaVSsLMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MVcysLMXEeuZeNFAWdsbSw" name="Hangman"/>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MVdZwLMXEeuZeNFAWdsbSw" name="Leaderboard">
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbOqkrMXEeuZeNFAWdsbSw" name="Leaderboard" specification="_MVen4LMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbPRoLMXEeuZeNFAWdsbSw" type="_MVdZwLMXEeuZeNFAWdsbSw" direction="return"/>
+          <language>java</language>
+          <body>// for advanced marks this needs to check for a file  first
+		File file = new File(&quot;leaderboard.txt&quot;);
+		if (!file.exists()) {
+			if (file.createNewFile()) {
+			System.out.println(&quot;File created.&quot;);
+			} else {
+			System.out.println(&quot;File was not created.&quot;);
+			}
+		}
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbPRobMXEeuZeNFAWdsbSw" name="print" specification="_MViSQLMXEeuZeNFAWdsbSw">
+          <language>java</language>
+          <body>// get the leaderboard list
+		ArrayList&lt;String> leaderboard = this.getLeaderboard();
+		// print each index of the leaderboard
+		System.out.println(&quot;Leader Board&quot;);
+		for (int i = 0; i &lt; leaderboard.size(); i++) {
+			System.out.println(leaderboard.get(i));
+		}
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbPRorMXEeuZeNFAWdsbSw" name="addPlayer" specification="_MaXH4bMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbPRo7MXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+          <language>java</language>
+          <body>String name = player.getName();
+		int points = player.getPoints();
+		
+		// addPlayerData
+		ArrayList&lt;String> leaderboard = this.addPlayerData(name, points);
+		// write leaderboard to file
+		this.writeLeaderboardtoFile(leaderboard);
+		
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbP4sLMXEeuZeNFAWdsbSw" name="getLeaderboard" specification="_MVjgYLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbP4sbMXEeuZeNFAWdsbSw" type="_MaV5wLMXEeuZeNFAWdsbSw" direction="return"/>
+          <language>java</language>
+          <body>// load the file
+		File leaderboardFile = new File(&quot;leaderboard.txt&quot;);
+		
+		// Read the entire file;
+		BufferedReader reader = new BufferedReader(new FileReader(leaderboardFile));
+		String line = null;
+		
+		ArrayList&lt;String> leaderboard = new ArrayList&lt;String>();
+		
+		while ((line = reader.readLine()) != null) {
+			leaderboard.add(line);
+		}
+
+		reader.close();
+		
+		// return leaderboard array;
+		return leaderboard;
+	
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbQfwLMXEeuZeNFAWdsbSw" name="addPlayerData" specification="_MVmjsLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbQfwbMXEeuZeNFAWdsbSw" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MbQfwrMXEeuZeNFAWdsbSw" name="points">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MbQfw7MXEeuZeNFAWdsbSw" type="_MaV5wLMXEeuZeNFAWdsbSw" direction="return"/>
+          <language>java</language>
+          <body>// get the player data
+		String playerInfo = name + &quot; , &quot; + Integer.toString(points);
+		
+		// get the leaderboard
+		ArrayList&lt;String> leaderboard = this.getLeaderboard();
+		
+		// get number of points player has
+		// for each index in the array assign string to temporary variable
+		if (leaderboard.isEmpty()) {
+			leaderboard.add(0,playerInfo);
+		} else {
+			for (int i = 0; i&lt;leaderboard.size(); i++) {
+				String temp = leaderboard.get(i);
+				temp = temp.substring(temp.lastIndexOf(',') + 1).trim();
+				int leaderPoints = Integer.parseInt(temp);
+				// compare with each line
+				// if points greater than points at line
+				if (leaderPoints &lt;= points) {
+					// add player info string the line index
+					leaderboard.add(i, playerInfo);
+					break;
+				} else if (i == (leaderboard.size()-1)) {
+					leaderboard.add(playerInfo);
+					break;
+				}
+			}
+		}
+		return leaderboard;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbQfxLMXEeuZeNFAWdsbSw" name="writeLeaderboardtoFile" specification="_Maj8MLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbQfxbMXEeuZeNFAWdsbSw" name="leaderboard" type="_MaV5wLMXEeuZeNFAWdsbSw"/>
+          <language>java</language>
+          <body>File f = new File (&quot;leaderboard.txt&quot;);
+		PrintWriter out = new PrintWriter (new FileOutputStream(f));
+		if (!f.exists()) {
+			f.createNewFile();
+		}
+		for (String s : leaderboard) {
+			out.println(s);
+		}
+		out.close();
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_MVen4LMXEeuZeNFAWdsbSw" name="Leaderboard" method="_MbOqkrMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+          <eAnnotations xmi:id="_MVhrMLMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_MVhrMbMXEeuZeNFAWdsbSw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_MVhrMrMXEeuZeNFAWdsbSw" type="_MVdZwLMXEeuZeNFAWdsbSw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MViSQLMXEeuZeNFAWdsbSw" name="print" method="_MbPRobMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw"/>
+        <ownedOperation xmi:id="_MVjgYLMXEeuZeNFAWdsbSw" name="getLeaderboard" method="_MbP4sLMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MajVILMXEeuZeNFAWdsbSw" type="_MaV5wLMXEeuZeNFAWdsbSw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MVmjsLMXEeuZeNFAWdsbSw" name="addPlayerData" visibility="private" method="_MbQfwLMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MVmjsbMXEeuZeNFAWdsbSw" name="name">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MVnKwLMXEeuZeNFAWdsbSw" name="points">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MajVIbMXEeuZeNFAWdsbSw" type="_MaV5wLMXEeuZeNFAWdsbSw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MaXH4bMXEeuZeNFAWdsbSw" name="addPlayer" method="_MbPRorMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MaXu8LMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Maj8MLMXEeuZeNFAWdsbSw" name="writeLeaderboardtoFile" visibility="private" method="_MbQfxLMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_Maj8MbMXEeuZeNFAWdsbSw" name="leaderboard" type="_MaV5wLMXEeuZeNFAWdsbSw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MVvGkLMXEeuZeNFAWdsbSw" name="MenuOption" visibility="package">
+        <ownedLiteral xmi:id="_MWDPoLMXEeuZeNFAWdsbSw" name="Hangman"/>
+        <ownedLiteral xmi:id="_MWDPobMXEeuZeNFAWdsbSw" name="Cointoss"/>
+        <ownedLiteral xmi:id="_MWDPorMXEeuZeNFAWdsbSw" name="Leaderboard"/>
+        <ownedLiteral xmi:id="_MWD2sLMXEeuZeNFAWdsbSw" name="Return"/>
+        <ownedLiteral xmi:id="_MWD2sbMXEeuZeNFAWdsbSw" name="UnrecognizedInput"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_MWHhELMXEeuZeNFAWdsbSw" name="Player">
+        <ownedAttribute xmi:id="_MazMwLMXEeuZeNFAWdsbSw" name="name" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Ma0a4LMXEeuZeNFAWdsbSw" name="points" visibility="protected">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Ma0a4bMXEeuZeNFAWdsbSw" value="100"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_Ma1pALMXEeuZeNFAWdsbSw" name="continues" visibility="package">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          <defaultValue xmi:type="uml:LiteralString" xmi:id="_Ma1pAbMXEeuZeNFAWdsbSw" value="3"/>
+        </ownedAttribute>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbTjErMXEeuZeNFAWdsbSw" name="Player" specification="_MWKkYLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbTjE7MXEeuZeNFAWdsbSw" name="playerName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MbTjFLMXEeuZeNFAWdsbSw" type="_MWHhELMXEeuZeNFAWdsbSw" direction="return"/>
+          <language>java</language>
+          <body>name = playerName;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbUKILMXEeuZeNFAWdsbSw" name="getPoints" specification="_MWLLcLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbUKIbMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return points;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbUxMLMXEeuZeNFAWdsbSw" name="addPoints" specification="_MWLygbMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbUxMbMXEeuZeNFAWdsbSw" name="pointsBet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>points += pointsBet;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbUxMrMXEeuZeNFAWdsbSw" name="subtractPoints" specification="_MWMZkLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbUxM7MXEeuZeNFAWdsbSw" name="pointsBet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>points -= pointsBet;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbUxNLMXEeuZeNFAWdsbSw" name="subtractContinue" specification="_MWNAoLMXEeuZeNFAWdsbSw">
+          <language>java</language>
+          <body>continues -= 1;
+  </body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbVYQLMXEeuZeNFAWdsbSw" name="getName" specification="_MWNAobMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbVYQbMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return name;
+	</body>
+        </ownedBehavior>
+        <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbVYQrMXEeuZeNFAWdsbSw" name="hasNumberOfPoints" specification="_MWNnsbMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MbVYQ7MXEeuZeNFAWdsbSw" name="numberOfPoints">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MbVYRLMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+          <language>java</language>
+          <body>return points >= numberOfPoints;
+	</body>
+        </ownedBehavior>
+        <ownedOperation xmi:id="_MWKkYLMXEeuZeNFAWdsbSw" name="Player" method="_MbTjErMXEeuZeNFAWdsbSw">
+          <eAnnotations xmi:id="_MWKkYrMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+            <details xmi:id="_MWKkY7MXEeuZeNFAWdsbSw" key="create"/>
+          </eAnnotations>
+          <ownedParameter xmi:id="_MWKkYbMXEeuZeNFAWdsbSw" name="playerName">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MWKkZLMXEeuZeNFAWdsbSw" type="_MWHhELMXEeuZeNFAWdsbSw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MWLLcLMXEeuZeNFAWdsbSw" name="getPoints" method="_MbUKILMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MWLygLMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MWLygbMXEeuZeNFAWdsbSw" name="addPoints" method="_MbUxMLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MWLygrMXEeuZeNFAWdsbSw" name="pointsBet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MWMZkLMXEeuZeNFAWdsbSw" name="subtractPoints" method="_MbUxMrMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MWMZkbMXEeuZeNFAWdsbSw" name="pointsBet">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MWNAoLMXEeuZeNFAWdsbSw" name="subtractContinue" method="_MbUxNLMXEeuZeNFAWdsbSw"/>
+        <ownedOperation xmi:id="_MWNAobMXEeuZeNFAWdsbSw" name="getName" method="_MbVYQLMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MWNnsLMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_MWNnsbMXEeuZeNFAWdsbSw" name="hasNumberOfPoints" method="_MbVYQrMXEeuZeNFAWdsbSw">
+          <ownedParameter xmi:id="_MWNnsrMXEeuZeNFAWdsbSw" name="numberOfPoints">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_MWOOwLMXEeuZeNFAWdsbSw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_MWO10LMXEeuZeNFAWdsbSw" name="PlayerType">
+        <ownedLiteral xmi:id="_MWQD8LMXEeuZeNFAWdsbSw" name="Admin"/>
+        <ownedLiteral xmi:id="_MWQD8bMXEeuZeNFAWdsbSw" name="Basic"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Enumeration" xmi:id="_ManmkLMXEeuZeNFAWdsbSw" name="MainMenu"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Mbbe4LMXEeuZeNFAWdsbSw" name="" memberEnd="_Mbbe4bMXEeuZeNFAWdsbSw _MawJcLMXEeuZeNFAWdsbSw">
+        <ownedEnd xmi:id="_Mbbe4bMXEeuZeNFAWdsbSw" name="" type="_MVPXULMXEeuZeNFAWdsbSw" association="_Mbbe4LMXEeuZeNFAWdsbSw"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_MT1CELMXEeuZeNFAWdsbSw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_MT1pILMXEeuZeNFAWdsbSw" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_MaIeYLMXEeuZeNFAWdsbSw" name="BufferedReader"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_MaKTkLMXEeuZeNFAWdsbSw" name="InputStreamReader"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_MaLhsbMXEeuZeNFAWdsbSw" name="IOException"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_MUJLILMXEeuZeNFAWdsbSw" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_MaV5wLMXEeuZeNFAWdsbSw" name="ArrayList"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_L7DVsLMXEeuZeNFAWdsbSw">
+      <eAnnotations xmi:id="_L7kTELMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_L73OALMXEeuZeNFAWdsbSw" base_Package="_Kg_ygLMXEeuZeNFAWdsbSw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_MU7OQLMXEeuZeNFAWdsbSw" base_Element="_MU4yALMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:EnumExtension xmi:id="_MU-4oLMXEeuZeNFAWdsbSw" base_Enumeration="_MU4yALMXEeuZeNFAWdsbSw">
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_MU_fsLMXEeuZeNFAWdsbSw" name="CointossGame">
+      <eAnnotations xmi:id="_MU_fsbMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_MU_fsrMXEeuZeNFAWdsbSw" key="sameFile"/>
+      </eAnnotations>
+      <generalization xmi:id="_MaQaMLMXEeuZeNFAWdsbSw" general="_MVPXULMXEeuZeNFAWdsbSw"/>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbJLALMXEeuZeNFAWdsbSw" name="CointossGame" specification="_MaNW4bMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbJLAbMXEeuZeNFAWdsbSw" name="newPlayer" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+        <ownedParameter xmi:id="_MbJLArMXEeuZeNFAWdsbSw" type="_MU_fsLMXEeuZeNFAWdsbSw" direction="return"/>
+        <language>java</language>
+        <body>super(newPlayer);
+  </body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbJyELMXEeuZeNFAWdsbSw" name="play" specification="_MVBU4LMXEeuZeNFAWdsbSw">
+        <language>java</language>
+        <body>// Check if we should continue playing or exit
+ Boolean shouldContinue = true;
+
+ // Print the instructions on how to play the game
+ this.printInstructions();
+
+ while(shouldContinue) {
+   // Ask user how many points they wish to bet
+   this.printHowManyPointsToBet(player);
+
+   try {
+     // Get the number of points bet
+     int amountBet = this.readAmount();
+
+     if (amountBet &lt;= 0) {
+       this.printMustBetMoreThanZeroPoints();
+       System.out.println(&quot;You must bet more than 0 points to play&quot;);
+
+     } else if (player.hasNumberOfPoints(amountBet)) {
+       this.printOptions();
+
+       PlayerChoice choice = this.getPlayerChoice();
+
+       if (choice == PlayerChoice.UnrecognizedInput) {
+         // Invalid input, check if user wants to continue, if yes then start again
+         if (this.handleUnrecognizedInput())  {
+           continue;
+         } else {
+     	  shouldContinue = false;	
+     	  break;
+         }
+       }
+
+       PlayerChoice result = this.flipCoin();
+
+       if (result == choice) {
+         this.playerWon(player, amountBet);
+       } else {
+         this.playerLost(player, amountBet);
+       }
+
+       if (player.continues > 0) {
+         System.out.println(&quot;Want to give it another shot? (y/n)&quot;);
+       }
+
+       if (!getYesNo()) {
+         shouldContinue = false;
+       }
+     } else {
+       System.out.println(&quot;You only have &quot; + player.getPoints() + &quot; to bet&quot;);
+     }
+
+
+   } catch (IOException e) {
+     // Error reading user input, ask to try again
+     if (this.handleUnrecognizedInput()) {
+       continue;
+     } else {
+       shouldContinue = false;
+       break;
+     }
+   } catch (NumberFormatException e) {
+     // Error converting input to integer, ask user to try again with an int
+     this.printInvalidAmountError();
+   }
+
+   if (player.continues &lt;= 0) {
+     shouldContinue = false;
+   }
+ }
+  </body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbKZILMXEeuZeNFAWdsbSw" name="getPlayerChoice" specification="_MVB78LMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbKZIbMXEeuZeNFAWdsbSw" type="_MU4yALMXEeuZeNFAWdsbSw" direction="return"/>
+        <language>java</language>
+        <body>String option = readLine();
+
+ if (option.equals(&quot;1&quot;)) {
+   return PlayerChoice.Heads;
+ } else if (option.equals(&quot;2&quot;)) {
+   return PlayerChoice.Tails;
+ } else {
+   return PlayerChoice.UnrecognizedInput;
+ }
+  </body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbKZIrMXEeuZeNFAWdsbSw" name="flipCoin" specification="_MVE_QLMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbKZI7MXEeuZeNFAWdsbSw" type="_MU4yALMXEeuZeNFAWdsbSw" direction="return"/>
+        <language>java</language>
+        <body>if (Math.random() > 0.5) {
+   return PlayerChoice.Heads;
+ } else {
+   return PlayerChoice.Tails;
+ }
+  </body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbLAMLMXEeuZeNFAWdsbSw" name="playerWon" specification="_MaPMELMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbLAMbMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+        <ownedParameter xmi:id="_MbLAMrMXEeuZeNFAWdsbSw" name="amountBet">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>super.playerWon(player, amountBet);
+ System.out.println(&quot;You WON! Your total points are now: &quot; + player.getPoints());
+  </body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbLAM7MXEeuZeNFAWdsbSw" name="playerLost" specification="_MaPzILMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbLANLMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+        <ownedParameter xmi:id="_MbLANbMXEeuZeNFAWdsbSw" name="amountBet">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>super.playerLost(player, amountBet);
+ System.out.println(&quot;Ahhhh too bad, better luck next time! Your current points are: &quot; + player.getPoints());
+  </body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbLnQLMXEeuZeNFAWdsbSw" name="printInstructions" specification="_MVGNYLMXEeuZeNFAWdsbSw">
+        <language>java</language>
+        <body>System.out.println(&quot;Ok ok, so it couldn't be simpler, you have two options, put your points down on one and roll the dice! .... or flip a coin I guess...&quot;);
+  </body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbLnQbMXEeuZeNFAWdsbSw" name="printOptions" specification="_MVGNYbMXEeuZeNFAWdsbSw">
+        <language>java</language>
+        <body>System.out.println(&quot;Ok then, heads or tails?&quot;);
+ System.out.println(&quot;1). Heads, it's always heads!&quot;);
+ System.out.println(&quot;2). Tails, that's not how probablity works!&quot;);
+  </body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_MVBU4LMXEeuZeNFAWdsbSw" name="play" method="_MbJyELMXEeuZeNFAWdsbSw"/>
+      <ownedOperation xmi:id="_MVB78LMXEeuZeNFAWdsbSw" name="getPlayerChoice" visibility="private" method="_MbKZILMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MaOlALMXEeuZeNFAWdsbSw" type="_MU4yALMXEeuZeNFAWdsbSw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MVE_QLMXEeuZeNFAWdsbSw" name="flipCoin" visibility="private" method="_MbKZIrMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MaOlAbMXEeuZeNFAWdsbSw" type="_MU4yALMXEeuZeNFAWdsbSw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MVGNYLMXEeuZeNFAWdsbSw" name="printInstructions" visibility="private" method="_MbLnQLMXEeuZeNFAWdsbSw"/>
+      <ownedOperation xmi:id="_MVGNYbMXEeuZeNFAWdsbSw" name="printOptions" visibility="private" method="_MbLnQbMXEeuZeNFAWdsbSw"/>
+      <ownedOperation xmi:id="_MaNW4bMXEeuZeNFAWdsbSw" name="CointossGame" method="_MbJLALMXEeuZeNFAWdsbSw">
+        <eAnnotations xmi:id="_MaN98bMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <details xmi:id="_MaN98rMXEeuZeNFAWdsbSw" key="create"/>
+        </eAnnotations>
+        <ownedParameter xmi:id="_MaN98LMXEeuZeNFAWdsbSw" name="newPlayer" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+        <ownedParameter xmi:id="_MaN987MXEeuZeNFAWdsbSw" type="_MU_fsLMXEeuZeNFAWdsbSw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MaPMELMXEeuZeNFAWdsbSw" name="playerWon" visibility="protected" method="_MbLAMLMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MaPMEbMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+        <ownedParameter xmi:id="_MaPMErMXEeuZeNFAWdsbSw" name="amountBet">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MaPzILMXEeuZeNFAWdsbSw" name="playerLost" visibility="protected" method="_MbLAM7MXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MaPzIbMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+        <ownedParameter xmi:id="_MaPzIrMXEeuZeNFAWdsbSw" name="amountBet">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </ownedParameter>
+      </ownedOperation>
+    </nestedClassifier>
+  </UMLLabProfile:EnumExtension>
+  <UMLLabProfile:StyledElement xmi:id="_MVAGwLMXEeuZeNFAWdsbSw" base_Element="_MU_fsLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:Generics xmi:id="_MVkugLMXEeuZeNFAWdsbSw" genericsValue="String" base_Element="_MVjgYLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:Generics xmi:id="_MVoY4LMXEeuZeNFAWdsbSw" genericsValue="String" base_Element="_MVmjsLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_MVw7wLMXEeuZeNFAWdsbSw" base_Element="_MVvGkLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:EnumExtension xmi:id="_MVz_ELMXEeuZeNFAWdsbSw" base_Enumeration="_MVvGkLMXEeuZeNFAWdsbSw">
+    <nestedClassifier xmi:type="uml:Enumeration" xmi:id="_MV0mILMXEeuZeNFAWdsbSw" name="MainMenu" visibility="package">
+      <eAnnotations xmi:id="_MV0mIbMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_MV0mIrMXEeuZeNFAWdsbSw" key="sameFile"/>
+      </eAnnotations>
+      <ownedLiteral xmi:id="_MV1NMLMXEeuZeNFAWdsbSw" name="NewPlayer"/>
+      <ownedLiteral xmi:id="_MV1NMbMXEeuZeNFAWdsbSw" name="Quit"/>
+      <ownedLiteral xmi:id="_MV10QLMXEeuZeNFAWdsbSw" name="UnrecognizedInput"/>
+    </nestedClassifier>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_MV43kLMXEeuZeNFAWdsbSw" name="Main">
+      <eAnnotations xmi:id="_MV43kbMXEeuZeNFAWdsbSw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <details xmi:id="_MV43krMXEeuZeNFAWdsbSw" key="sameFile"/>
+      </eAnnotations>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbRG0LMXEeuZeNFAWdsbSw" name="main" specification="_MV6FsLMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbRG0bMXEeuZeNFAWdsbSw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MbRG0rMXEeuZeNFAWdsbSw" value="*"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>// Get a Leaderboard class so we can show the player on demand
+		Leaderboard leaderboard = new Leaderboard();
+
+		String mainMenu = &quot;continue&quot;;
+		while (mainMenu.equals(&quot;continue&quot;)) {
+			
+			// print the main menu
+			printMainMenu();
+			
+			MainMenu mainOption = readMainOption();
+			
+			if (mainOption == MainMenu.NewPlayer) {
+				// print the starting message
+				printWelcome();
+		
+				try {
+				// Create a new player
+				Player player = getPlayer();
+				System.out.println(&quot;player type: &quot; + player.getClass().getSimpleName());
+		
+				// Once created print a message
+				userCreated(player);
+		
+					while(player.continues > 0) {
+					// Now that we have our player tell them the options
+					printOptions();
+		
+					// Read in the option
+					MenuOption option = readOption();
+		
+						// Depending on what the user selected start a game,
+						// retire or show the leaderboard
+						if (option == MenuOption.Return) {
+							// Setting continues to 0 will trigger the if statement below
+							// and exit the while loop
+							System.out.println(&quot;Thanks for playing, goodbye&quot;);
+							player.continues = 0;
+						} else if (option == MenuOption.Leaderboard) {
+							System.out.println(&quot;Leaderboard&quot;);
+							leaderboard.print();
+						} else if (option == MenuOption.Hangman) {
+							// start the hangman game
+							// HangmanGame hangman = new HangmanGame(player);
+							System.out.println(&quot;Lets play hangman&quot;);
+						} else if (option == MenuOption.Cointoss) {
+							// start the hangman game
+							CointossGame cointoss = new CointossGame(player);
+							cointoss.play();
+							System.out.println(&quot;Lets play coin toss&quot;);
+						} else if (option == MenuOption.UnrecognizedInput) {
+							printUnrecognisedMenuOption();
+						}
+		
+						if (player.continues == 0) {
+							System.out.println(&quot;Your out of continues!! Let's see how you did!'&quot;);
+							// user has run out of continues
+							// Add their name to the leaderboard
+							// Display the leaderbaord
+							// Say goodbye
+							//
+							leaderboard.addPlayer(player);
+							leaderboard.print();
+							// printGoodbye();
+						}
+					}
+				} catch(Exception e) {
+					System.out.println(&quot;An error was thrown!&quot;);
+					System.out.println(e);
+				}
+			} else if (mainOption == MainMenu.Quit){
+				mainMenu = &quot;quit&quot;;
+				leaderboard.print();
+			} else if (mainOption == MainMenu.UnrecognizedInput) {
+				printUnrecognisedMenuOption();
+			}
+			
+		}
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbRt4LMXEeuZeNFAWdsbSw" name="readLine" specification="_MV7T0LMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbRt4bMXEeuZeNFAWdsbSw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <language>java</language>
+        <body>BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+		return reader.readLine();
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbSU8LMXEeuZeNFAWdsbSw" name="readMainOption" specification="_MV8h8LMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbSU8bMXEeuZeNFAWdsbSw" type="_ManmkLMXEeuZeNFAWdsbSw" direction="return"/>
+        <language>java</language>
+        <body>String mainOption = readLine();
+
+		System.out.println(&quot;Option just read is:&quot;);
+		System.out.println(mainOption);
+
+		if (mainOption.equals(&quot;1&quot;)) {
+			return MainMenu.NewPlayer;
+		} else if (mainOption.equals(&quot;q&quot;)) {
+			return MainMenu.Quit;
+		} else {
+			return MainMenu.UnrecognizedInput;
+		}
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbSU8rMXEeuZeNFAWdsbSw" name="readOption" specification="_MV9wELMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbSU87MXEeuZeNFAWdsbSw" type="_MVvGkLMXEeuZeNFAWdsbSw" direction="return"/>
+        <language>java</language>
+        <body>String option = readLine();
+
+		System.out.println(&quot;Option just read is:&quot;);
+		System.out.println(option);
+
+		if (option.equals(&quot;1&quot;)) {
+			return MenuOption.Hangman;
+		} else if (option.equals(&quot;2&quot;)) {
+			return MenuOption.Cointoss;
+		} else if (option.equals(&quot;l&quot;)) {
+			return MenuOption.Leaderboard;
+		} else if (option.equals(&quot;r&quot;)) {
+			return MenuOption.Return;
+		} else {
+			return MenuOption.UnrecognizedInput;
+		}
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbSU9LMXEeuZeNFAWdsbSw" name="getPlayer" specification="_MV--MLMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbSU9bMXEeuZeNFAWdsbSw" type="_MWHhELMXEeuZeNFAWdsbSw" direction="return"/>
+        <language>java</language>
+        <body>// Create a buffered reader to
+		String name = readLine();
+
+		System.out.println(&quot;And are you a an Admin (y/n)?&quot;);
+
+		String type = readLine();
+		type = type.toLowerCase();
+		System.out.println(type);
+		// change the below to look for a passcode if admin
+		if(type.equals(&quot;y&quot;)){
+			System.out.println(&quot;Player is admin&quot;);
+			return new AdminPlayer(name);
+		} else {
+			System.out.println(&quot;Player is a basic player&quot;);
+			return new BasicPlayer(name);
+		}
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbS8ALMXEeuZeNFAWdsbSw" name="printUnrecognisedMenuOption" specification="_MWAMULMXEeuZeNFAWdsbSw">
+        <language>java</language>
+        <body>System.out.println(&quot;Sorry I don't recognise that input, can you try another from the list?&quot;);
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbS8AbMXEeuZeNFAWdsbSw" name="userCreated" specification="_MaayQLMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MbS8ArMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+        <language>java</language>
+        <body>System.out.println(&quot;Great welcome to the fun &quot; + player.getName() + &quot;!&quot;);
+		System.out.println(&quot;Now in order to play our games you will need to bet points, the more points you bet the greater the reward!&quot;);
+		System.out.println(&quot;However if you loose all your points OR loose at 3 games you'll be out!'&quot;);
+		System.out.println(&quot;Then your score will be recorded and the you'll see how you match up on the leaderboard!'&quot;);
+		System.out.println(&quot;Good Luck!&quot;);
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbS8A7MXEeuZeNFAWdsbSw" name="printWelcome" specification="_MWAzYLMXEeuZeNFAWdsbSw">
+        <language>java</language>
+        <body>System.out.println(&quot;Welcome to Mischief Managed Arcade!&quot;);
+		System.out.println(&quot;Firstly let's get your name so you can start playing!&quot;);
+		System.out.println(&quot;So what is your name?&quot;);
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbTjELMXEeuZeNFAWdsbSw" name="printOptions" specification="_MWAzYbMXEeuZeNFAWdsbSw">
+        <language>java</language>
+        <body>System.out.println(&quot;What do you want to do?&quot;);
+		System.out.println(&quot;1). Good gusser? Try your brain on hangman!&quot;);
+		System.out.println(&quot;2). True luck, bet your points on a coin toss!&quot;);
+		System.out.println(&quot;l). View the leaderboard&quot;);
+		System.out.println(&quot;r). Return&quot;);
+	</body>
+      </ownedBehavior>
+      <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_MbTjEbMXEeuZeNFAWdsbSw" name="printMainMenu" specification="_MWBacLMXEeuZeNFAWdsbSw">
+        <language>java</language>
+        <body>System.out.println(&quot;Welcome to Mischief Managed Arcade!&quot;);
+		System.out.println(&quot;Please select from the options below&quot;);
+		System.out.println(&quot;how you wish to proceed!&quot;);
+		System.out.println(&quot;Main Menu&quot;);
+		System.out.println(&quot;1). New Player&quot;);
+		System.out.println(&quot;q). Quit&quot;);
+		
+	</body>
+      </ownedBehavior>
+      <ownedOperation xmi:id="_MV6FsLMXEeuZeNFAWdsbSw" name="main" isStatic="true" method="_MbRG0LMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MV6FsbMXEeuZeNFAWdsbSw" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_MV6swLMXEeuZeNFAWdsbSw" value="*"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MV7T0LMXEeuZeNFAWdsbSw" name="readLine" visibility="private" isStatic="true" method="_MbRt4LMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MV764LMXEeuZeNFAWdsbSw" direction="return">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MV8h8LMXEeuZeNFAWdsbSw" name="readMainOption" visibility="private" isStatic="true" method="_MbSU8LMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_Mao0sbMXEeuZeNFAWdsbSw" type="_ManmkLMXEeuZeNFAWdsbSw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MV9wELMXEeuZeNFAWdsbSw" name="readOption" visibility="private" isStatic="true" method="_MbSU8rMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MaaLMLMXEeuZeNFAWdsbSw" type="_MVvGkLMXEeuZeNFAWdsbSw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MV--MLMXEeuZeNFAWdsbSw" name="getPlayer" visibility="private" isStatic="true" method="_MbSU9LMXEeuZeNFAWdsbSw" raisedException="_MaLhsbMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MaaLMbMXEeuZeNFAWdsbSw" type="_MWHhELMXEeuZeNFAWdsbSw" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_MWAMULMXEeuZeNFAWdsbSw" name="printUnrecognisedMenuOption" visibility="private" isStatic="true" method="_MbS8ALMXEeuZeNFAWdsbSw"/>
+      <ownedOperation xmi:id="_MWAzYLMXEeuZeNFAWdsbSw" name="printWelcome" visibility="private" isStatic="true" method="_MbS8A7MXEeuZeNFAWdsbSw"/>
+      <ownedOperation xmi:id="_MWAzYbMXEeuZeNFAWdsbSw" name="printOptions" visibility="private" isStatic="true" method="_MbTjELMXEeuZeNFAWdsbSw"/>
+      <ownedOperation xmi:id="_MWBacLMXEeuZeNFAWdsbSw" name="printMainMenu" visibility="private" isStatic="true" method="_MbTjEbMXEeuZeNFAWdsbSw"/>
+      <ownedOperation xmi:id="_MaayQLMXEeuZeNFAWdsbSw" name="userCreated" visibility="private" isStatic="true" method="_MbS8AbMXEeuZeNFAWdsbSw">
+        <ownedParameter xmi:id="_MabZULMXEeuZeNFAWdsbSw" name="player" type="_MWHhELMXEeuZeNFAWdsbSw"/>
+      </ownedOperation>
+    </nestedClassifier>
+  </UMLLabProfile:EnumExtension>
+  <UMLLabProfile:StyledElement xmi:id="_MV5eoLMXEeuZeNFAWdsbSw" base_Element="_MV43kLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_MWPc4LMXEeuZeNFAWdsbSw" base_Element="_MWO10LMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:Reference xmi:id="_MaJsgLMXEeuZeNFAWdsbSw" base_Element="_MaIeYLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:Reference xmi:id="_MaLhsLMXEeuZeNFAWdsbSw" base_Element="_MaKTkLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:Reference xmi:id="_MaNW4LMXEeuZeNFAWdsbSw" base_Element="_MaLhsbMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:Reference xmi:id="_MaXH4LMXEeuZeNFAWdsbSw" base_Element="_MaV5wLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:Generics xmi:id="_MalxYLMXEeuZeNFAWdsbSw" genericsValue="String" base_Element="_Maj8MbMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:Reference xmi:id="_Mao0sLMXEeuZeNFAWdsbSw" base_Element="_ManmkLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_MattMLMXEeuZeNFAWdsbSw" base_Element="_Mar4ALMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_MauUQLMXEeuZeNFAWdsbSw" base_Element="_MattMbMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_MaviYLMXEeuZeNFAWdsbSw" base_Element="_Mau7ULMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_MawwgLMXEeuZeNFAWdsbSw" base_Element="_MawJcLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_MaylsLMXEeuZeNFAWdsbSw" base_Element="_MaxXkLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Mazz0LMXEeuZeNFAWdsbSw" base_Element="_MazMwLMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Ma1B8LMXEeuZeNFAWdsbSw" base_Element="_Ma0a4LMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Ma2QELMXEeuZeNFAWdsbSw" base_Element="_Ma1pALMXEeuZeNFAWdsbSw"/>
+  <UMLLabProfile:Reference xmi:id="_MbdUELMXEeuZeNFAWdsbSw" base_Element="_Mbbe4LMXEeuZeNFAWdsbSw"/>
+</xmi:XMI>
